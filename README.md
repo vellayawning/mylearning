@@ -12,3 +12,17 @@ Practice "50 Projects In 50 Days - HTML, CSS &amp; JavaScript" by Brad Traversy 
 
 ----
 Day 08 and Day 10 need fixing(needfix.md)
+
+
+----
+
+error in git usage
+
+GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+
+
+git push -u origin main
+fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could not resolve host: github.com
+
+git push -u origin main
+fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
