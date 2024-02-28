@@ -30,6 +30,7 @@ fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could
 user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
 ```
+**Err0r 02**
 
 **Error 3**
 
@@ -131,6 +132,110 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
 Some how this fixed the issue - need to look into this later, for today issue fixed (maybe it was due to vscodium update, and after system restart issue fix?)
+
+**Err0r 04** 
+
+So, Due to some reason, was unable to connect the assert(local repo host machine) to internet. But still continued to practive and to daily regular push (even if it fails with *Err0r 01*).
+
+Now when I connected to next and was able to do a succesful push - Github shows all 'green' for all the past day -- so I can conclude that the 'contributions, more specifically (commits aspect of it), depends on the if `git commit` was done or not.
+
+```bash 
+user@system:~/location/50dayshtml$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   day23_drawing-app/script.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .README.md.swp
+        day24_kinetic-loader/
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+user@system:~/location/50dayshtml$ git add day24_kinetic-loader/ day23_drawing-app/
+user@system:~/location/50dayshtml$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   day23_drawing-app/script.js
+        new file:   day24_kinetic-loader/index.html
+        new file:   day24_kinetic-loader/needfix.md
+        new file:   day24_kinetic-loader/script.js
+        new file:   day24_kinetic-loader/style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .README.md.swp
+
+
+user@system:~/location/50dayshtml$ git commit -m "Day 23.2 Drawing App v0.2 & Day 24 Kinetic
+ LOader v1.0 - 27-02-2024"
+[main 79bc861] Day 23.2 Drawing App v0.2 & Day 24 Kinetic LOader v1.0 - 27-02-2024
+ 5 files changed, 139 insertions(+), 5 deletions(-)
+ create mode 100644 day24_kinetic-loader/index.html
+ create mode 100644 day24_kinetic-loader/needfix.md
+ create mode 100644 day24_kinetic-loader/script.js
+ create mode 100644 day24_kinetic-loader/style.css
+user@system:~/location/50dayshtml$ git push -u origin main
+fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could not resolve host: github.com
+
+user@system:~/location/50dayshtml$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .README.md.swp
+        day25_content-placeholder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+user@system:~/location/50dayshtml$ git add day25_content-placeholder/
+user@system:~/location/50dayshtml$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   day25_content-placeholder/index.html
+        new file:   day25_content-placeholder/needfix.md
+        new file:   day25_content-placeholder/script.js
+        new file:   day25_content-placeholder/style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .README.md.swp
+
+user@system:~/location/50dayshtml$ git commit -m "Day 25 Content Placeholder v0.1 - 28-02-20
+24"
+[main 0f112e6] Day 25 Content Placeholder v0.1 - 28-02-2024
+ 4 files changed, 116 insertions(+)
+ create mode 100644 day25_content-placeholder/index.html
+ create mode 100644 day25_content-placeholder/needfix.md
+ create mode 100644 day25_content-placeholder/script.js
+ create mode 100644 day25_content-placeholder/style.css
+user@system:~/location/50dayshtml$ git push -u origin main
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 4.61 KiB | 590.00 KiB/s, done.
+Total 22 (delta 4), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/vellayawning/50dayshtml.git
+   fa76818..0f112e6  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+user@system:~/location/50dayshtml$ 
+```
 
 SOurces:
 [^1] https://stackoverflow.com/questions/62697845/git-push-origin-master-missing-or-invalid-credentials
