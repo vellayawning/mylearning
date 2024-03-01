@@ -30,6 +30,7 @@ fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could
 user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
 ```
+
 **Err0r 02**
 
 **Error 3**
@@ -133,13 +134,13 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 Some how this fixed the issue - need to look into this later, for today issue fixed (maybe it was due to vscodium update, and after system restart issue fix?)
 
-**Err0r 04** 
+**Err0r 04**
 
-So, Due to some reason, was unable to connect the assert(local repo host machine) to internet. But still continued to practive and to daily regular push (even if it fails with *Err0r 01*).
+So, Due to some reason, was unable to connect the assert(local repo host machine) to internet. But still continued to practive and to daily regular push (even if it fails with _Err0r 01_).
 
 Now when I connected to next and was able to do a succesful push - Github shows all 'green' for all the past day -- so I can conclude that the 'contributions, more specifically (commits aspect of it), depends on the if `git commit` was done or not.
 
-```bash 
+```bash
 user@system:~/location/50dayshtml$ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -234,7 +235,7 @@ remote: Resolving deltas: 100% (4/4), completed with 1 local object.
 To https://github.com/vellayawning/50dayshtml.git
    fa76818..0f112e6  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
-user@system:~/location/50dayshtml$ 
+user@system:~/location/50dayshtml$
 ```
 
 SOurces:
