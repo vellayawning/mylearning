@@ -3,6 +3,7 @@
 Practice "50 Projects In 50 Days - HTML, CSS &amp; JavaScript" by Brad Traversy and Florin Pop
 
 - 24 Jan 2023, Day 01 Project starter. Project started, goal daily push, learn about git. dupicate user push done, need to check if "two/dupilcate useres can be merged"
+<mid text edit>
 - 25 Jan 2023, added/staged png by mistake and pushed the same, can to know that even "rm -rf" get reflected in push . Learned about 'git rm --cached / git restore --stag' a bit to late.
 - 26 Jan 2023, tried to fix "dupicate user".
   - Attempt01: https://medium.com/codex/how-to-merge-different-authors-in-git-fc704043d475 failed.
