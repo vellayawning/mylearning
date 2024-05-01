@@ -11,7 +11,7 @@ Practice "50 Projects In 50 Days - HTML, CSS &amp; JavaScript" by Brad Traversy 
 - 01 Feb 2024 , just realised all the commit have dates as "2023" , need to check how that can be fixed (0/8)
 
 ---
-
+drygdghhhxfhjj
 - Day 08 and Day 10 need fixing(needfix.md)
 
 ---
@@ -27,7 +27,7 @@ user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could not resolve host: github.com
 ```
 
-```bash
+```bashm....llbbbb ii
 user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
 ```
