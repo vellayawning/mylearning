@@ -242,3 +242,5 @@ user@system:~/location/50dayshtml$
 SOurces:
 [^1] https://stackoverflow.com/questions/62697845/git-push-origin-master-missing-or-invalid-credentials
 [^2] https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
+
+setup improvement and in moving forgot to push
