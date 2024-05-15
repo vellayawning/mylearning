@@ -10,23 +10,27 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-        <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></input> </label> 
-        <label id="email-label">Email  <input id="email" type="email" required placeholder="Enter your email"></input> </label>
+        <label id="name-label">Name </label> <input id="name" type="text" required placeholder="Enter your name"></input> 
+        <label id="email-label">Email </label> <input id="email" type="email" required placeholder="Enter your email"></input> 
         <label id="number-label">Age(optional) </label> <input id="number" type="number" required placeholder="Age" min="10" max="99"></input>
+        
         <label id="role">Which option best describes your current role?</label>
             <select id="dropdown">
-                <option>Select an option</option>
+                <option></option><label>Select an option</label
                 <option>Student</option>
                 <option>Full Time Job</option>
                 <option>Full Time Learner</option>
                 <option>Prefer not to say</option>
                 <option>Other</option>        
             </select>
+        
         <label id="recommend">Would you recommend freeCodeCamp to a friend?</label>
-            <input type="radio" id="radiogroup" name="radiogroup" value="definitely"><input>Definitely
-            <input id="radiogroup" name="radiogroup" type="radio" value="maybe"><input>Maybe
-            <input id="radiogroup" name="radiogroup" type="radio" value="not-sure" ><input>Not sure
+            <input type="radio" id="radiogroup" name="radiogroup" value="definitely"></input>Definitely
+            <input type="radio" id="radiogroup" name="radiogroup"  value="maybe"></input>Maybe
+            <input type="radio" id="radiogroup" name="radiogroup"  value="not-sure" ></input>Not sure
+        
         <label id="improve">What is your favorite feature of freeCodeCamp?</label>
+
         <select id="dropdownsecond">
             <option>Select an option</option>
             <option>Challenges</option>
@@ -34,21 +38,26 @@
             <option>Community</option>
             <option>Open Source</option>
             <option>Other</option>
+        </select>
+
         <label id="improve">What would you like to see improved? (Check all that apply)</label>
-            <input type="checkbox" value="project">Projects<input>
-            <input type="checkbox" value="backend">Back-end Projects<input>
-            <input type="checkbox" value="data">Data Visualization<input>
-            <input type="checkbox" value="challenges">Challenges<input>
-            <input type="checkbox" value="opc">Open Source Community<input>
-            <input type="checkbox" value="ghr">Gitter help rooms<input>
-            <input type="checkbox" value="video">Videos<input>
-            <input type="checkbox" value="citymeetup">City Meetups<input>
-            <input type="checkbox" value="wiki">Wiki<input>
-            <input type="checkbox" value="forum">Forum<input>
-            <input type="checkbox" value="additiona">Additional Courses<input>
+            <input type="checkbox" value="project"></input><label>Projects</label>
+            <input type="checkbox" value="backend"></input><label>Back-end Projects</label>
+            <input type="checkbox" value="data"></input><label>Data Visualization</label>
+            <input type="checkbox" value="challenges"></input>Challenges<label></label>
+            <input type="checkbox" value="opc"></input><label>Open Source Community</label>
+            <input type="checkbox" value="ghr"></input><label>Gitter help rooms</label>
+            <input type="checkbox" value="video"></input><label>Videos</label>
+            <input type="checkbox" value="citymeetup"></input><label>City Meetups</label>
+            <input type="checkbox" value="wiki"></input><label>Wiki</label>
+            <input type="checkbox" value="forum"></input><label>Forum</label>
+            <input type="checkbox" value="additiona"></input><label>Additional Courses</label>
+
         <label id="comments">Any comments or suggestions?</label>
+
         <textarea placeholder="Enter you comment here..."></textarea>
+
         <button id="submit" type="submit">Submit</button>
     </form>
-    </body>
-    </html>
+  </body>
+</html>
