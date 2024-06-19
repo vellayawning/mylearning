@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #c9d2fc;
+}
+
+.cat-head{
+  /*position: static; - will not move top/left useless
+  top: 100px;
+  left: 100px;
+  position: relative; - will based on top and left
+  top: 100px;
+  left: 100px; 
+  position: absolute; -  
+  top: 100px;
+  left: 100px; 
+  position: fixed; - no matter what this will be on screen
+  top: 100px;
+  left: 100px;
+  position: sticky;
+  top: 0; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 205px;
+  height: 180px;
+  border: 1px solid #000;
+  border-radius: 46%;
+  background: linear-gradient(#5e5e5e 85%, #45454f 100%)
+}
+
+/* removed as .box dic is removed from html. this was made to illustrate position
+.box{
+  width: 200px;
+  height: 600px;
+  background-color: #000;
+  position: absolute;
+  top: 800px;
+  left: 650px;
+}*/
+
+/* left ear */
+.cat-left-ear{
+  position: absolute;
+  top: -26px;
+  left: -31px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  transform: rotate(-45deg);
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #5e5e5e;
+}
+
+/* right ear */
+.cat-right-ear {
+  /* position ears*/
+  position: absolute;
+  top: -26px;
+  left: 163px;
+  /*rotate to fix on face*/
+  transform: rotate(45deg);
+  /* to overlap above head*/
+  z-index: -1;
+  /*remove sharp edges*/
+    border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  /* create ears*/
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #5e5e5e;
+}
