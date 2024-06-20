@@ -1,0 +1,21 @@
+* {
+  /*box-sizing: content-box;*/
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
+
+/*.gallery{
+  width: 50%;
+  border: 5px solid red;
+}
+
+img{
+  width: 100%;
+  padding: 5px;
+  border: 5px solid blue;
+}*/

@@ -3,6 +3,7 @@
 Practice "50 Projects In 50 Days - HTML, CSS &amp; JavaScript" by Brad Traversy and Florin Pop
 
 - 24 Jan 2023, Day 01 Project starter. Project started, goal daily push, learn about git. dupicate user push done, need to check if "two/dupilcate useres can be merged"
+<mid text edit>
 - 25 Jan 2023, added/staged png by mistake and pushed the same, can to know that even "rm -rf" get reflected in push . Learned about 'git rm --cached / git restore --stag' a bit to late.
 - 26 Jan 2023, tried to fix "dupicate user".
   - Attempt01: https://medium.com/codex/how-to-merge-different-authors-in-git-fc704043d475 failed.
@@ -10,7 +11,7 @@ Practice "50 Projects In 50 Days - HTML, CSS &amp; JavaScript" by Brad Traversy 
 - 01 Feb 2024 , just realised all the commit have dates as "2023" , need to check how that can be fixed (0/8)
 
 ---
-
+drygdghhhxfhjj
 - Day 08 and Day 10 need fixing(needfix.md)
 
 ---
@@ -26,7 +27,7 @@ user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': Could not resolve host: github.com
 ```
 
-```bash
+```bashm....llbbbb ii
 user@machine: git push -u origin main
 fatal: unable to access 'https://github.com/vellayawning/50dayshtml.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
 ```
@@ -241,3 +242,5 @@ user@system:~/location/50dayshtml$
 SOurces:
 [^1] https://stackoverflow.com/questions/62697845/git-push-origin-master-missing-or-invalid-credentials
 [^2] https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
+
+setup improvement and in moving forgot to push
