@@ -49,9 +49,10 @@ body{
   position: absolute;
   top: -26px;
   left: -31px;
+  z-index: 1;
+  transform: rotate(-45deg);
   border-top-left-radius: 90px;
   border-top-right-radius: 10px;
-  transform: rotate(-45deg);
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 70px solid #5e5e5e;
@@ -65,13 +66,57 @@ body{
   left: 163px;
   /*rotate to fix on face*/
   transform: rotate(45deg);
-  /* to overlap above head*/
-  z-index: -1;
+  /* to overlap above head/image
+  z-index: -1;*/
+  /* to overlap below head/image*/
+  z-index: 1;
   /*remove sharp edges*/
-    border-top-left-radius: 90px;
+  border-top-left-radius: 90px;
   border-top-right-radius: 10px;
   /* create ears*/
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 70px solid #5e5e5e;
+}
+
+/* for inner ear left*/
+.cat-left-inner-ear{
+  /*move the created ears*/
+  position: absolute;
+  top: 22px;
+  left: -20px;
+  /*remove sharp edges*/
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius:40%;
+  /*Create the ears*/
+  border-left: 20px solid transparent;
+  border-right:20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
+}
+
+/* for inner ear right*/
+.cat-right-inner-ear {
+  /*move the created ears*/
+  position: absolute;
+  top: 22px;
+  left: -20px;
+  /*remove sharp edges*/
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  /*Create the ears*/
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
+}
+
+/* for left eye*/
+.cat-left-eye{
+  /* create eye*/
+  width: 30px;
+  height: 40px;
+  background-color: #000;
 }
