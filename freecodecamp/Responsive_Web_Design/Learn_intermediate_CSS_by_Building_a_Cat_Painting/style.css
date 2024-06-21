@@ -2,10 +2,12 @@
 	box-sizing: border-box;
 }
 
+/*page backgound*/
 body{
 	background-color: #c9d2fc;
 }
 
+/*for the head*/
 .cat-head{
   /*position: static; - will not move top/left useless
   top: 100px;
@@ -115,8 +117,51 @@ body{
 
 /* for left eye*/
 .cat-left-eye{
+  /*Move eyes into the face*/
+  position: absolute;
+  top: 54px;
+  left: 39px;
+  /*round out the eyes*/
+  border-radius: 60%;
+  transform: rotate(25deg);
   /* create eye*/
   width: 30px;
   height: 40px;
   background-color: #000;
+}
+
+/* for right eye*/
+.cat-right-eye {
+  position: absolute;
+  top: 54px;
+  left: 134px;
+   border-radius: 60%;
+  transform: rotate(-25deg);
+  width: 30px;
+  height: 40px;
+  background-color: #000;
+}
+
+/* for left inner eye*/
+.cat-left-inner-eye{
+    position: absolute;
+  top: 8px;
+  left: 2px;
+  border-radius: 60%;
+  transform: rotate(10deg);
+    width: 10px;
+  height: 20px;
+  background-color: #fff;
+}
+
+/* for right inner eye*/
+.cat-right-inner-eye{
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  border-radius: 60%;
+  transform: rotate(-5deg);
+  width: 10px;
+  height: 20px;
+  background-color: #fff;
 }
