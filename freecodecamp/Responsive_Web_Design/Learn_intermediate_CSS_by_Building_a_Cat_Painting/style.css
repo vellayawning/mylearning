@@ -165,3 +165,14 @@ body{
   height: 20px;
   background-color: #fff;
 }
+
+.cat-nose{
+  /*move nose*/
+  position: absolute;
+  top: 108px;
+  left: 85px;
+  /* create nose*/
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+ border-bottom: 20px solid #442c2c;
+}
