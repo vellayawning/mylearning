@@ -7,6 +7,7 @@
   --building-color4: #538cc6;
   --window-color1: black;
   --window-color2: #8cd9b3;
+  --window-color3: #d98cb3;
 }
 /*add border and box-sizing*/
 *{
@@ -92,21 +93,59 @@ body{
 .bb2 {
   width: 10%;
   height: 50%;
-  /*background-color: var(--building-color2, green);*/
-  background-color: var(--building-color2);
+  /*background-color: var(--building-color2, green);
+  background-color: var(--building-color2);*/
+}
+
+.bb2a{
+  /* to see the change
+  margin: auto;
+  width: 5vw;
+  height: 5vw;
+  will create a rectangle
+  border-top: 1vw solid #000;
+  border-bottom: 1vw solid #000;
+  border-left: 1vw solid #999;
+  border-right: 1vw solid #999;
+  add thick ness to the left and right of the rectangle
+  border-left: 5vw solid #999;
+  border-right: 5vw solid #999;*/
+  border-bottom: 5vh solid var(--building-color2);
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+
 }
 
 .bb2b {
   width: 100%;
   height: 100%;
+  background: repeating-linear-gradient(
+      var(--building-color2),
+      var(--building-color2) 6%,
+      var(--window-color2) 6%,
+      var(--window-color2) 9%
+    );
+  /* 
+  background: linear-gradient(
+      var(--building-color2) 0%,
+      var(--building-color2) 6%,
+      var(--window-color2) 6%,
+      var(--window-color2) 9%
+    );*/
 }
 
 
 .bb3 {
   width: 10%;
   height: 55%;
-  /*background-color: var(--building-color3, pink);*/
-  background-color: var(--building-color3);
+  /*background-color: var(--building-color3, pink);
+  background-color: var(--building-color3);*/
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3),
+      var(--window-color3) 15%
+    );
 }
 
 .bb4 {
