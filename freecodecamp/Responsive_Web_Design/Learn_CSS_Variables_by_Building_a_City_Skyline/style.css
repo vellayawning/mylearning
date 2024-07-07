@@ -12,8 +12,8 @@
   --window-color4: #8cb3d9;
 }
 /*add border and box-sizing*/
-*{
-	border: 1px solid black;
+* {
+	/*border: 1px solid black;*/
 	box-sizing: border-box;
 }
 
@@ -328,13 +328,39 @@ border-left: 8vw solid var(--building-color1);
   right: 10%;
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
+  /*background-color: var(--building-color2);*/
+  background: repeating-linear-gradient(
+    var(--building-color2) 0%, 
+    var(--building-color2) 5%,
+    transparent 5%,
+    transparent 10%
+  ),
+  repeating-linear-gradient(
+    90 deg,
+      var(--building-color2) 0%,
+      var(--building-color2) 12%,
+      var(--window-color2) 12%,
+      var(--window-color2) 44%
+    ),
 }
 
 .fb6 {
   width: 9%;
   height: 38%;
-  background-color: var(--building-color3);
+  /*background-color: var(--building-color3);*/
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3) 0%,
+      var(--building-color3) 10%,
+      transparent 10%,
+      transparent 30%
+    ),
+  repeating-linear-gradient(
+    var(--building-color3) 0%,
+    var(--building-color3) 10%,
+    var(--window-color3)  10%,
+    var(--window-color3)  30%
+    );
 }
 
 .background-buildings, .foreground-buildings{
