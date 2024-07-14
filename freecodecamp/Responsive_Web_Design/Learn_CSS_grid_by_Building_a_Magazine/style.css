@@ -43,6 +43,10 @@ main{
 
 .text{
   grid-column: 2 / 3;
+    font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  column-width: 25rem;
+  text-align: justify;
 }
 
 .hero{
@@ -53,6 +57,11 @@ main{
 img{
   width: 100%;
   object-fit: cover;
+}
+
+hr{
+  margin: 1.5rem 0;
+
 }
 
 .hero-title{
@@ -83,4 +92,18 @@ text-align: center
 .social-icons{
    display: grid;
    font-size: 3rem;
+     grid-template-columns: repeat(5, 1fr);
+     grid-auto-flow: column;
+     grid-auto-columns: 1fr;
+      align-items: center;
+
+
 }
+
+.first-paragraph::first-letter{
+   font-size: 6rem;
+    color: orangered;
+      float: left;
+  margin-right: 1rem;
+}
+
