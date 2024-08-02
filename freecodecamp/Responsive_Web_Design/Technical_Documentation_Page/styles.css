@@ -1,0 +1,35 @@
+nav{
+    position: top;
+}
+
+p{
+    font-size: medium;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+header{
+    font-size: large;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+code{
+    font-size: small;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:720px){
+    p{
+        font-weight: 200;
+    }
+    header{
+        font-weight: 300;
+    }
+    code{
+        font-size: x-small;
+    }
+}
