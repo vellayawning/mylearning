@@ -1,0 +1,44 @@
+nav{
+    position: top;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 25px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ce1d49;
+}
+
+form{
+    background-color: #19df54;   
+}
+
+#submit{
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: pink;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+
+
+@media only screen and (max-width:720px){
+    #submit{
+        color: brown;
+    }
+  
+  }
