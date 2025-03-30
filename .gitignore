@@ -2,3 +2,6 @@
 .png
 .jpg
 .mp3
+
+# ignore ALL .pass file
+.pass
