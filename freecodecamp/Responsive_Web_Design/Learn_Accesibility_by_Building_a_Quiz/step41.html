@@ -126,15 +126,28 @@
         <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">css questions</h2>
         <div class="formrow">
           <div class="question-block">
-            <label>Why CSS so hard?</label>
+            <label for="first_select">Why CSS so hard?</label>
           </div>
-          <div class="answer"></div>
+          <div class="answer">
+            <select required  name="first_select" id="first_select">
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
           <div class="question-block">
-            <label>like really - Why CSS so hard?</label>
+            <label for="text_area">like really - Why CSS so hard?</label>
           </div>
-          <div class="answer"></div>
+          <div class="answer">
+            <textarea placeholder="ENterresponse" rows="100" cols="100" name="text_area" id="text_area"></textarea>
+          </div>
         </div></section>
       </form>
     </main>
   </body>
 </html>
+
+
+
+
+
