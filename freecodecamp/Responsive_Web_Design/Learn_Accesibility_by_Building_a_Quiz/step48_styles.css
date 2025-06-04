@@ -1,0 +1,69 @@
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+  /* really confused here, re-read flexbox*/
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+#logo {
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
+h1{
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+}
+
+nav > ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav > ul > li{
+  color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+
+}
+
+li > a {
+  /*color:#dfdfe2;
+  contrast:(7/1); or simply inhert?*/
+  color: inherit;
+  /*took me very ong to figure below*/
+  text-decoration: none;
+}
+
+nav > ul > li:hover{
+  background: #dfdfe2 ;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+h1, h2{
+  font-family: Verdana sans-serif;
+}
+
+h2{
+    border-bottom: 4px solid #dfdfe2
+}
+
+p::before{
+  content: "Question #";
+}
